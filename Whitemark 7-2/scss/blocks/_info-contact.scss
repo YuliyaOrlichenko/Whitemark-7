@@ -1,0 +1,33 @@
+.info-contact {
+    display: flex;
+    gap: 30px;
+    margin: auto 0 0;
+
+    @include vp-1023 {
+        gap: 20px;
+    }
+
+    &__mail {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-blue-charcoa;
+
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    &__tel {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-blue-charcoa;
+
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

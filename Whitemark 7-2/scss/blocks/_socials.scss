@@ -1,0 +1,60 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: flex-end;
+  gap: 20px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1023 {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    color: $color-trout;
+  }
+}
+
+.socials__link:hover {
+  color: $color-ecru-white;
+}
+
+.socials__link:focus-visible {
+  color: $color-ecru-white;
+  outline: none;
+}
+
+.socials--secondary {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  color: $color-blue-charcoa;
+
+  @include vp-767 {
+    gap: 24px;
+  }
+}
+
+.socials__link--secondary {
+  color: $color-blue-charcoa;
+}
+
+.socials__link--secondary:hover {
+  color: $color-ecru-white;
+}
+
+.socials__link--secondary:focus-visible {
+  color: $color-ecru-white;
+  outline: none;
+}

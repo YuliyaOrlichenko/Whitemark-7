@@ -1,0 +1,15 @@
+.info__contact {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    &-mail {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &-tel {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

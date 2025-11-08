@@ -1,0 +1,14 @@
+.page-technicalwork {
+    padding: 195px 0 20px;
+    min-height: calc(100vh - 158px);
+
+    @include vp-1023 {
+        padding: 166px 0 20px;
+        min-height: calc(100vh - 128px);
+    }
+
+    @include vp-767 {
+        padding: 157px 0 20px;
+        min-height: calc(100vh - 128px);
+    }
+}

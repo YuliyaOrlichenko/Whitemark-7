@@ -1,0 +1,52 @@
+.info-list {
+    display: block;
+    width: 800px;
+    min-height: 190px;
+    margin: 0 auto;
+    padding: 0;
+
+    @include vp-1023 {
+        max-width: 528px;
+    }
+
+    @include vp-767 {
+        max-width: 295px;
+    }
+
+    &__title {
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        margin: 0 0 30px 0;
+        padding: 0;
+
+        @include vp-1023 {
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+
+        @include vp-767 {
+            font-size: 26px;
+            line-height: 24px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin: 0 0 60px 0;
+        padding: 0;
+
+        @include vp-1023 {
+            margin-bottom: 40px;
+        }
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
